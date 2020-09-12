@@ -7,7 +7,6 @@ public enum EventType {
 
   private String code;
 
-  @JsonValue
   public String getCode() {
     return code;
   }
