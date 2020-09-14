@@ -26,7 +26,7 @@ public class EventVo {
   @JsonSerialize(using = EventTypeSerializer.class)
   @JsonDeserialize(using = EventTypeDeserializer.class)
   private EventType type;
-  @JsonSerialize(using = TimestampSerializer.class)
+  @JsonFormat(shape = JsonFormat.Shape.NUMBER)
   private Date time;
   @JsonUnwrapped
   private UserVo user;
